@@ -98,6 +98,53 @@ Colocamos a string Base64 e obteremos a nossa resposta.
 
 <a href="https://ibb.co/JRHcsqfG"><img src="https://i.ibb.co/QFMJKk2T/ws21.jpg" alt="ws21" border="0"></a>
 
+Para essa pergunta, colocaremos na busca "user guest". Temos 4 logs para investigarmos.
+
+<a href="https://ibb.co/v4p6W00K"><img src="https://i.ibb.co/MkrxHFF3/ws22.jpg" alt="ws22" border="0"></a>
+
+Ao abrir um dos logs, na linha de comando tem o diretório do system32 aonde contém o utilitário "net.exe". Pesquisamos a respeito sobre o "net.exe" e percebemos que ele é um utilitário de linha de comando no Windows usado para gerenciar recursos de rede, usuários, grupos, serviços e compartilhamentos de rede. E um dos seus subcomandos é permitir a realização de tarefas como alterações de senha. É aonde queremos chegar...
+
+<a href="https://ibb.co/PZrVDVTP"><img src="https://i.ibb.co/TBwNWNK7/ws24.jpg" alt="ws24" border="0"></a>
+
+Rolando mais abaixo encontramos a nossa resposta.
+
+<a href="https://ibb.co/NgPKQsWx"><img src="https://i.ibb.co/Q7RMzfY9/ws35.jpg" alt="ws35" border="0"></a>
+
+<a href="https://ibb.co/pBjZ7Nwf"><img src="https://i.ibb.co/FL4Jrc35/ws25.jpg" alt="ws25" border="0"></a>
+
+<a href="https://ibb.co/fVtk30LM"><img src="https://i.ibb.co/cKt6WTVJ/ws26.jpg" alt="ws26" border="0"></a>
+
+Há diversas ferramentas de "dumping" de credenciais pela rede, mas a mais popular para o sistema Windows talvez seja o Mimikatz. Vamos colocar na busca...
+
+<a href="https://ibb.co/Hp4dyJp7"><img src="https://i.ibb.co/rf0shWfk/ws27.jpg" alt="ws27" border="0"></a>
+
+Em um dos 4 logs referente ao mimikatz, chegamos ao nosso arquivo .exe.
+
+<a href="https://ibb.co/pB5ZYTmb"><img src="https://i.ibb.co/tTFcV6dQ/ws28.jpg" alt="ws28" border="0"></a>
+
+<a href="https://ibb.co/7NVBmxVg"><img src="https://i.ibb.co/G3kGSfks/ws29.jpg" alt="ws29" border="0"></a>
+
+<a href="https://ibb.co/JFwKdxm2"><img src="https://i.ibb.co/wrFRLJBC/ws30.jpg" alt="ws30" border="0"></a>
+
+Nossa pergunta final não foi difícil de achar, basta colocar o sinalizador "THM" do TryHackMe para obtermos 1 log.
+
+<a href="https://ibb.co/hJDqxcP4"><img src="https://i.ibb.co/Jw5hWqfG/ws31.jpg" alt="ws31" border="0"></a>
+
+Abrimos o log, basta procurar pelo sinalizador...
+
+<a href="https://ibb.co/8LTdZSck"><img src="https://i.ibb.co/dw1LYzgZ/ws32.jpg" alt="ws32" border="0"></a>
+
+<a href="https://ibb.co/Xrkf9PbN"><img src="https://i.ibb.co/LXhDMy8b/ws33.jpg" alt="ws33" border="0"></a>
+
+E chegamos ao fim...obrigado por acompanharem este desafio. Foi de grande relevância fazer essa atividade "hands-on" do Wazuh. Entendendo a interface não apenas teóricamente mas sim, num contexto prático aonde um analista de cibersegurança ou analista SOC pode se deparar em resolver o incidente. Em conjunto entedemos também um pouco sobre os processos executáveis do Windows, como ele ajuda com uma interface SIEM correlacionada, a investigar algumas anomalias que deixam rastros nos logs.
+
+<a href="https://ibb.co/wNDWBtWZ"><img src="https://i.ibb.co/BV8ZckZH/ws34.jpg" alt="ws34" border="0"></a>
+
+
+
+
+
+
 
 
 
